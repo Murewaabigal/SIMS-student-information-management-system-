@@ -34,7 +34,7 @@ namespace SIMS.Controllers
             _repo.Delete(Id);
                 return Ok();
         }
-        [HttpPost("add")]
+        [HttpPost("update")]
         public IActionResult Update(Student student) 
         {
             _repo.Update(student);
